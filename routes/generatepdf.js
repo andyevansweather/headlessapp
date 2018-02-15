@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 
   // Generating pdf
   htmlPdf.create(url, options)
-    .then(pdf => pdf.toFile('new.pdf'))
+    .then(pdf => pdf.toFile('public/pdfs/new.pdf'))
     .catch(err => console.log(err));
 
   res.send('tada pdf made!!');
