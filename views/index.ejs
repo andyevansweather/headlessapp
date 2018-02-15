@@ -6,17 +6,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body ng-app="app" ng-controller="MainController as mainCtrl" class="container">
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-
-    {{mainCtrl.test}}
-
     <h1>Get Your Pdf</h1>
 
-    <input ng-model="mainCtrl.url" />
+    <input ng-model="mainCtrl.url" placeholder="put in a url for a page you want to convert"/>
 
     <div>
-      <button class="btn" ng-click="mainCtrl.postData()">Generate PDF</button>
+      <button class="btn" ng-click="mainCtrl.postData(mainCtrl.url)">Generate PDF</button>
     </div>
     
     <div class="addpadding">
@@ -25,9 +20,9 @@
     
 
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
   <script src='/javascripts/app.js'></script>
   <script src='/javascripts/app.js'></script>
   <script src='/javascripts/app/MainController.js'></script>

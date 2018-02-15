@@ -11,6 +11,8 @@ function MainController(dataService) {
 
     vm.isSet = false;
 
+    vm.url = '';
+
     vm.postData = (url) => {
         return dataService
                     .makeUrl(url)
