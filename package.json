@@ -14,5 +14,9 @@
     "html-pdf-chrome": "^0.4.2",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "angular": "^1.6.9",
+    "jquery": "^3.3.1"
   }
 }
